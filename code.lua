@@ -1,5 +1,7 @@
 local player = game.Players.LocalPlayer
-
+local a = Instance.new("Hint")
+a.Parent = workspace
+a.Text = "🙏 PLS JOIN .gg/7gEksmdKgq 🙏"
 local function createGUI()
 	local ScreenGui = Instance.new("ScreenGui")
 	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -83,7 +85,7 @@ local function createGUI()
 	local titleLabel = Instance.new("TextLabel")
 	titleLabel.Size = UDim2.new(1, 0, 0, 40)
 	titleLabel.Position = UDim2.new(0, 0, 0, 0)
-	titleLabel.Text = "Xpress045 GUI by Xpress045"
+	titleLabel.Text = "F3X Xpress045 GUI by Xpress045"
 	titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	titleLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	titleLabel.TextSize = 20
