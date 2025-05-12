@@ -2022,7 +2022,7 @@ https://scriptblox.com/script/Universal-Script-F3X-Xpress045-GUI-39216?notif_id=
 
 		local function createRainToads()
 			while true do
-				wait(0.01) -- Here they change the appearance time of the Toads or other meshes
+				wait(0.01)
 				if player.Character and player.Character:FindFirstChild("Humanoid") and player.Character.Humanoid.Health > 0 then
 					local hrpcf = player.Character.HumanoidRootPart.CFrame
 					local x = hrpcf.x
@@ -2037,20 +2037,20 @@ https://scriptblox.com/script/Universal-Script-F3X-Xpress045-GUI-39216?notif_id=
 						local newToad = CreatePart(CFrame.new(math.floor(xloc), math.random(cf, cf + 400), math.floor(zloc)))
 						for i, v in game.Workspace:GetDescendants() do
 							if v.Name == "Part" and v.Parent == workspace and v.CFrame.x == math.floor(xloc) and v.CFrame.z == math.floor(zloc) then
-								SetName(v, "Get trolled u fagz") -- Here the name of the toad changes
+								SetName(v, "Get trolled u fagz")
 								SetAnchor(false, v)
 								AddMesh(v)
 								Resize(v, Vector3.new(50, 50, 50), v.CFrame)
 								MeshResize(v, Vector3.new(15, 15, 15))
-								SetMesh(v, "137458024695143") -- Here put it A custom mesh
-								SetTexture(v, "86031221460311") -- X2
+								SetMesh(v, "137458024695143")
+								SetTexture(v, "86031221460311")
 								SetCollision(v, true)
 								v.Orientation = Vector3.new(0, 0, 0)
 
 								v.CFrame = v.CFrame + Vector3.new(0, 0, 0)
 
 								local sound = Instance.new("Sound", v)
-								sound.SoundId = "rbxassetid://153752123" -- Here the noise or another sound To the toads or other things It works when they appear 
+								sound.SoundId = "rbxassetid://153752123" 
 								sound.Volume = 0
 								sound.PlayOnRemove = true
 								sound:Destroy()
